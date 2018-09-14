@@ -1,0 +1,21 @@
+#platform :ios, ‘9.0’
+source 'https://github.com/CocoaPods/Specs.git'
+target 'BeautyPictures' do
+
+ 
+inhibit_all_warnings!
+    pod 'SVProgressHUD'
+    pod 'SDWebImage'
+    pod 'AFNetworking'
+    pod 'MJRefresh'
+    pod 'MJExtension'
+    pod 'Masonry'
+    # 集成小圆点
+    pod 'PPBadgeView'
+    pod 'LEEAlert'
+    pod 'FMDB'
+    pod 'IQKeyboardManager'
+    pod 'MBProgressHUD', '~> 0.9'
+    pod 'HUPhotoBrowser'
+    pod 'YYKit'
+end

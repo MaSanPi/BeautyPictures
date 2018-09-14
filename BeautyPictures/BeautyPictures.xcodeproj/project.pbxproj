@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		880E8B44AFE510A633DEA2AC /* libPods-BeautyPictures.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2178228D4A87EF57DA52D6A6 /* libPods-BeautyPictures.a */; };
 		CE6C5A8F214B49D00051B47D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CE6C5A8E214B49D00051B47D /* AppDelegate.m */; };
 		CE6C5A92214B49D00051B47D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE6C5A91214B49D00051B47D /* ViewController.m */; };
 		CE6C5A95214B49D00051B47D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE6C5A93214B49D00051B47D /* Main.storyboard */; };
@@ -40,6 +41,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2178228D4A87EF57DA52D6A6 /* libPods-BeautyPictures.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BeautyPictures.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F48EE95D8267A30649C7BB5 /* Pods-BeautyPictures.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BeautyPictures.release.xcconfig"; path = "Pods/Target Support Files/Pods-BeautyPictures/Pods-BeautyPictures.release.xcconfig"; sourceTree = "<group>"; };
+		62F053BCB6A0492760B5FF9A /* Pods-BeautyPictures.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BeautyPictures.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BeautyPictures/Pods-BeautyPictures.debug.xcconfig"; sourceTree = "<group>"; };
 		CE6C5A8A214B49D00051B47D /* BeautyPictures.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BeautyPictures.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE6C5A8D214B49D00051B47D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		CE6C5A8E214B49D00051B47D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -74,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				880E8B44AFE510A633DEA2AC /* libPods-BeautyPictures.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,6 +99,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		76C58D650EA650E4C141FB70 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2178228D4A87EF57DA52D6A6 /* libPods-BeautyPictures.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		CE6C5A81214B49D00051B47D = {
 			isa = PBXGroup;
 			children = (
@@ -101,6 +114,8 @@
 				CE6C5AA5214B49D20051B47D /* BeautyPicturesTests */,
 				CE6C5AB0214B49D20051B47D /* BeautyPicturesUITests */,
 				CE6C5A8B214B49D00051B47D /* Products */,
+				E034E2C289A2FEF0608FE1AC /* Pods */,
+				76C58D650EA650E4C141FB70 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -207,6 +222,15 @@
 			path = Media;
 			sourceTree = "<group>";
 		};
+		E034E2C289A2FEF0608FE1AC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				62F053BCB6A0492760B5FF9A /* Pods-BeautyPictures.debug.xcconfig */,
+				5F48EE95D8267A30649C7BB5 /* Pods-BeautyPictures.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -214,9 +238,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CE6C5AB6214B49D20051B47D /* Build configuration list for PBXNativeTarget "BeautyPictures" */;
 			buildPhases = (
+				D602D99FC577739F08100B50 /* [CP] Check Pods Manifest.lock */,
 				CE6C5A86214B49D00051B47D /* Sources */,
 				CE6C5A87214B49D00051B47D /* Frameworks */,
 				CE6C5A88214B49D00051B47D /* Resources */,
+				E293277A6CABCCE2241DA77B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -331,6 +357,49 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		D602D99FC577739F08100B50 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BeautyPictures-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E293277A6CABCCE2241DA77B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-BeautyPictures/Pods-BeautyPictures-resources.sh",
+				"${PODS_ROOT}/IQKeyboardManager/IQKeyboardManager/Resources/IQKeyboardManager.bundle",
+				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
+				"${PODS_ROOT}/SVProgressHUD/SVProgressHUD/SVProgressHUD.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/IQKeyboardManager.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MJRefresh.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SVProgressHUD.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BeautyPictures/Pods-BeautyPictures-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		CE6C5A86214B49D00051B47D /* Sources */ = {
@@ -511,6 +580,7 @@
 		};
 		CE6C5AB7214B49D20051B47D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 62F053BCB6A0492760B5FF9A /* Pods-BeautyPictures.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -530,6 +600,7 @@
 		};
 		CE6C5AB8214B49D20051B47D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5F48EE95D8267A30649C7BB5 /* Pods-BeautyPictures.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
