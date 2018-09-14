@@ -7,7 +7,8 @@
 //
 
 #import "AppDelegate.h"
-
+#import "MBTabBarController.h"
+#import "MBNavigationController.h"
 @interface AppDelegate ()
 
 @end
@@ -17,6 +18,18 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    self.window=[[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
+    MBTabBarController *tabar=[[MBTabBarController alloc]init];
+    MBNavigationController *nav=[[MBNavigationController alloc]init];
+    self.window.backgroundColor=[UIColor whiteColor];
+    [nav setNavigationBarHidden:YES];
+    [nav addChildViewController:tabar];
+    self.window.rootViewController=nav;
+    [self.window makeKeyAndVisible];
+    
+    
+    
+    
     return YES;
 }
 

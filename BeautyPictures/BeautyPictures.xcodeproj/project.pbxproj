@@ -15,6 +15,11 @@
 		CE6C5A9D214B49D10051B47D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CE6C5A9C214B49D10051B47D /* main.m */; };
 		CE6C5AA7214B49D20051B47D /* BeautyPicturesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CE6C5AA6214B49D20051B47D /* BeautyPicturesTests.m */; };
 		CE6C5AB2214B49D20051B47D /* BeautyPicturesUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = CE6C5AB1214B49D20051B47D /* BeautyPicturesUITests.m */; };
+		CEFF927B214B4CC100233437 /* MBNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFF927A214B4CC100233437 /* MBNavigationController.m */; };
+		CEFF927F214B4D8000233437 /* UIColor+MB.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFF927E214B4D8000233437 /* UIColor+MB.m */; };
+		CEFF9282214B4DF400233437 /* UIView+MBExpandFram.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFF9281214B4DF400233437 /* UIView+MBExpandFram.m */; };
+		CEFF9287214B4F8800233437 /* MBTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFF9286214B4F8800233437 /* MBTabBarController.m */; };
+		CEFF9290214B504F00233437 /* MediaVc.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFF928F214B504F00233437 /* MediaVc.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +56,17 @@
 		CE6C5AAD214B49D20051B47D /* BeautyPicturesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BeautyPicturesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE6C5AB1214B49D20051B47D /* BeautyPicturesUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BeautyPicturesUITests.m; sourceTree = "<group>"; };
 		CE6C5AB3214B49D20051B47D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CEFF9279214B4CC100233437 /* MBNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MBNavigationController.h; sourceTree = "<group>"; };
+		CEFF927A214B4CC100233437 /* MBNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MBNavigationController.m; sourceTree = "<group>"; };
+		CEFF927D214B4D8000233437 /* UIColor+MB.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+MB.h"; sourceTree = "<group>"; };
+		CEFF927E214B4D8000233437 /* UIColor+MB.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+MB.m"; sourceTree = "<group>"; };
+		CEFF9280214B4DF400233437 /* UIView+MBExpandFram.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+MBExpandFram.h"; sourceTree = "<group>"; };
+		CEFF9281214B4DF400233437 /* UIView+MBExpandFram.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+MBExpandFram.m"; sourceTree = "<group>"; };
+		CEFF9284214B4E3200233437 /* BeautyPictures.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BeautyPictures.pch; sourceTree = "<group>"; };
+		CEFF9285214B4F8800233437 /* MBTabBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MBTabBarController.h; sourceTree = "<group>"; };
+		CEFF9286214B4F8800233437 /* MBTabBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MBTabBarController.m; sourceTree = "<group>"; };
+		CEFF928E214B504F00233437 /* MediaVc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MediaVc.h; sourceTree = "<group>"; };
+		CEFF928F214B504F00233437 /* MediaVc.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MediaVc.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,13 +117,11 @@
 		CE6C5A8C214B49D00051B47D /* BeautyPictures */ = {
 			isa = PBXGroup;
 			children = (
-				CE6C5A8D214B49D00051B47D /* AppDelegate.h */,
-				CE6C5A8E214B49D00051B47D /* AppDelegate.m */,
-				CE6C5A90214B49D00051B47D /* ViewController.h */,
-				CE6C5A91214B49D00051B47D /* ViewController.m */,
-				CE6C5A93214B49D00051B47D /* Main.storyboard */,
-				CE6C5A96214B49D10051B47D /* Assets.xcassets */,
-				CE6C5A98214B49D10051B47D /* LaunchScreen.storyboard */,
+				CEFF9288214B4FB800233437 /* Class */,
+				CEFF9283214B4E1400233437 /* Config */,
+				CEFF927C214B4CDF00233437 /* Extensions */,
+				CEFF9278214B4B8600233437 /* Other */,
+				CE6C5ABF214B4AF80051B47D /* Main */,
 				CE6C5A9B214B49D10051B47D /* Info.plist */,
 				CE6C5A9C214B49D10051B47D /* main.m */,
 			);
@@ -130,6 +144,67 @@
 				CE6C5AB3214B49D20051B47D /* Info.plist */,
 			);
 			path = BeautyPicturesUITests;
+			sourceTree = "<group>";
+		};
+		CE6C5ABF214B4AF80051B47D /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				CEFF9279214B4CC100233437 /* MBNavigationController.h */,
+				CEFF927A214B4CC100233437 /* MBNavigationController.m */,
+				CEFF9285214B4F8800233437 /* MBTabBarController.h */,
+				CEFF9286214B4F8800233437 /* MBTabBarController.m */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		CEFF9278214B4B8600233437 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				CE6C5A8D214B49D00051B47D /* AppDelegate.h */,
+				CE6C5A8E214B49D00051B47D /* AppDelegate.m */,
+				CE6C5A90214B49D00051B47D /* ViewController.h */,
+				CE6C5A91214B49D00051B47D /* ViewController.m */,
+				CE6C5A93214B49D00051B47D /* Main.storyboard */,
+				CE6C5A96214B49D10051B47D /* Assets.xcassets */,
+				CE6C5A98214B49D10051B47D /* LaunchScreen.storyboard */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		CEFF927C214B4CDF00233437 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				CEFF9280214B4DF400233437 /* UIView+MBExpandFram.h */,
+				CEFF9281214B4DF400233437 /* UIView+MBExpandFram.m */,
+				CEFF927D214B4D8000233437 /* UIColor+MB.h */,
+				CEFF927E214B4D8000233437 /* UIColor+MB.m */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		CEFF9283214B4E1400233437 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				CEFF9284214B4E3200233437 /* BeautyPictures.pch */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		CEFF9288214B4FB800233437 /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				CEFF928D214B500400233437 /* Media */,
+			);
+			path = Class;
+			sourceTree = "<group>";
+		};
+		CEFF928D214B500400233437 /* Media */ = {
+			isa = PBXGroup;
+			children = (
+				CEFF928E214B504F00233437 /* MediaVc.h */,
+				CEFF928F214B504F00233437 /* MediaVc.m */,
+			);
+			path = Media;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -264,7 +339,12 @@
 			files = (
 				CE6C5A92214B49D00051B47D /* ViewController.m in Sources */,
 				CE6C5A9D214B49D10051B47D /* main.m in Sources */,
+				CEFF927F214B4D8000233437 /* UIColor+MB.m in Sources */,
+				CEFF927B214B4CC100233437 /* MBNavigationController.m in Sources */,
 				CE6C5A8F214B49D00051B47D /* AppDelegate.m in Sources */,
+				CEFF9290214B504F00233437 /* MediaVc.m in Sources */,
+				CEFF9287214B4F8800233437 /* MBTabBarController.m in Sources */,
+				CEFF9282214B4DF400233437 /* UIView+MBExpandFram.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -434,7 +514,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/BeautyPictures/Config/BeautyPictures.pch";
 				INFOPLIST_FILE = BeautyPictures/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -450,7 +533,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/BeautyPictures/Config/BeautyPictures.pch";
 				INFOPLIST_FILE = BeautyPictures/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
